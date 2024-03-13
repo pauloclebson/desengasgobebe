@@ -1,0 +1,304 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  font-family: cursive, Arial, sans-serif;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.buttons button {
+  background-color: #E5FBFF;
+  border-radius: 8px;
+  padding: 5px 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.buttons button:hover {
+  background-color: #0c515a;
+  color: white;
+}
+
+
+@media only screen and (min-width: 320px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-size: 10px;
+  }
+
+  .content-login {
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #E5FBFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .icons img {
+    width: 50px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .buttons {
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .buttons button {
+    background-color: #E5FBFF;
+    border-radius: 8px;
+    padding: 5px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+
+  .entrar {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .title h1 {
+    font-weight: bold;
+    font-size: 30px;
+    color: #000d57f2;
+
+  }
+
+  .title p,
+  .username {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 14px;
+    color: #000d57f2;
+
+  }
+
+  .caixa-input {
+    color: rgb(16, 16, 109);
+    padding-left: 10px;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-size: 10px;
+  }
+
+  .conteudo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .buttons button {
+    background-color: #E5FBFF;
+    border-radius: 8px;
+    padding: 5px 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  .entrar {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+  }
+
+  .title {
+    text-align: center;
+    color: #000d57f2;
+
+  }
+
+  .title h1 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .title p {
+    font-size: 20px;
+  }
+
+  .username {
+    font-size: 25px;
+  }
+
+  .caixa-input {
+    font-size: 20px;
+    width: 350px;
+    height: 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+  .buttons button {
+    font-size: 20px;
+  }
+
+  .title h1 {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  .title p {
+    font-size: 20px;
+  }
+
+  .username {
+    font-size: 20px;
+  }
+
+  .caixa-input {
+    font-size: 25px;
+    width: 400px;
+    height: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+  }
+
+  .icons img {
+    width: 80px;
+  }
+}
+
+
+@media only screen and (min-width: 1440px) {
+  .buttons button {
+    font-size: 28px;
+  }
+
+  .title h1 {
+    font-weight: bold;
+    font-size: 50px;
+  }
+
+  .title p {
+    font-size: 30px;
+  }
+
+  .username {
+    font-size: 32px;
+  }
+
+  .caixa-input {
+    height: 32px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+  }
+
+  .icons img {
+    width: 90px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .content-login {
+    padding: 100px;
+  }
+
+  .buttons button {
+    margin-top: 40px;
+    margin-right: 40px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .buttons button {
+    font-size: 50px;
+  }
+
+  .title h1 {
+    font-weight: bold;
+    font-size: 80px;
+  }
+
+  .title p {
+    margin-bottom: 90px;
+    font-size: 60px;
+  }
+
+  .username {
+    font-size: 60px;
+  }
+
+  .caixa-input {
+    font-size: 65px;
+    width: 800px;
+    height: 70px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(12, 12, 12, 0.671);
+  }
+
+  .icons {
+    margin-top: 120px
+  }
+
+  .icons img {
+    width: 100px;
+  }
+}

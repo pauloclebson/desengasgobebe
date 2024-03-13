@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/tela-procedimento.css">
+  <script src="../js/tela-procedimento.js" defer></script>
+  <title>Desengasgo Bebê</title>
+</head>
+<body>
+  <div class="buttons">
+    <button class="button-voltar" type="button">Voltar</button>
+  </div>
+  <div class="content">
+      <div class="content-msg">
+        <div  class="balao-conversa">
+          <p id="mensagemBot"><strong><span id="nomeUsuario"></span></strong>, agora vamos realizar o primeiro procedimento de tapotagem!</p>
+      </div>
+      </div>
+      <div class="imagens">
+          <div class="content-img">
+            <img src="../img/enfermeira.png" id="personagem1" alt="Personagem 1">
+          </div>
+          <div class="content-img">
+            <img src="../img/tapotagem.png" alt="baby">
+          </div>
+      </div>
+      <div id="contadorCliques">
+        Número de tapotagem: <span id="contador">0</span>
+      </div>
+      <div id="balaoConversa" class="coracao">
+        <p>&hearts;</p>
+      </div>
+      <div id="mensagemResultado" style="display: none;">
+        <p id="textoResultado"></p>
+      </div>
+      <!-- <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div> -->
+      <div class="buttons">
+        <button id="botaoAvancar" class="button-vamos" type="button" onclick="avancarConversa()">Avançar</button>
+        <button id="botaoFinalizar" class="button-parar" type="button" style="display: none;" onclick="finalizarTapotagem()">Finalizar Tapotagem</button>
+      </div>
+
+  </div>
+  <audio id="som_vitoria" src="../audio/sucesso.mp3" preload="auto"></audio>
+  <audio id="som_derrota" src="../audio/derrota.mp3" preload="auto"></audio>
+  <audio id="som_pulse_heart" src="../audio/pulse_heart.wav" preload="auto"></audio>
+</body>
+</html>
